@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+     rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <form class="color-selector-form" id="color-selector-form">
+            <input class="color-picker" type="color" name="seed-color" id="seed-color" value="#F55A5A">
+            <select name="mode" class="mode-selector" id="mode-selector">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome-dark</option>
+                <option value="monochrome-light">Monochrome-light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic-complement</option>
+                <option value="triad">Triad</option>
+                <option value="quad">Quad</option>
+            </select>
+            <button class="submit-btn" type="submit">Get color scheme</button>
+        </form>
+    </header>
+    <main>
+        <div class="color-scheme-container">
+            <div class="color-container">
+                <div class="color color-one" id="color-one"></div>
+                <p>#F55A5A</p>
+            </div>
+            <div class="color-container">
+                <div class="color color-two" id="color-two"></div>
+                <p>#2B283A</p>
+            </div>
+            <div class="color-container">
+                <div class="color color-three" id="color-three"></div>
+                <p>#FBF3AB</p>
+            </div>
+            <div class="color-container">
+                <div class="color color-four" id="color-four"></div>
+                <p>#AAD1B6</p>
+            </div>
+            <div class="color-container">
+                <div class="color color-five" id="color-five"></div>
+                <p>#A626D3</p>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="index.js"></script>
+</body>
+</html>

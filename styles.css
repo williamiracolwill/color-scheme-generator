@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 25px 14px;
+}
+
+main {
+    flex: 1;
+}
+
+.color-selector-form {
+    display: flex;
+    justify-content: space-around;
+}
+
+.color-picker,
+select,
+.submit-btn {
+    border: solid 1px #D1D5DB;
+}
+
+select,
+.submit-btn {
+    font-family: inherit;
+    border-radius: 6px;
+    padding: 0 10px;
+}
+
+.color-picker {
+    width: 60px;
+    height: 42px;
+}
+
+select,
+::picker(select) {
+  appearance: base-select;
+}
+
+select {
+    width: 400px;
+    padding-top: 10px;
+    margin: 0 .75rem;
+}
+
+select:hover,
+select:focus {
+    background: none;
+}
+
+select::picker-icon {
+    color: #9CA3AF;
+    content: url(assets/Selector.png);
+}
+
+::picker(select) {
+  border: solid .5px #D1D5DB;  
+  border-radius: 6px;
+  margin-top: 2px;
+  padding-top: 8px;
+}
+
+option {
+    padding: 10px;
+}
+
+option:hover,
+option:focus {
+    background: none;
+    font-weight: 600;
+}
+
+option::checkmark {
+    order: 1;
+    margin-left: auto;
+    content: url(assets/Check.png);
+}
+
+.submit-btn {
+    background: none;
+    cursor: pointer;
+}
+
+.color-scheme-container {
+    display: flex;
+    height: 100%;
+    text-align: center;
+}
+
+.color-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-width: 0;
+}
+
+.color {
+    flex: 1;
+}
+
+.color-one {
+    background-color: #F55A5A;
+}
+.color-two {
+    background-color: #2B283A;
+}
+.color-three {
+    background-color: #FBF3AB;
+}
+.color-four {
+    background-color: #AAD1B6;
+}
+.color-five {
+    background-color: #A626D3;
+}

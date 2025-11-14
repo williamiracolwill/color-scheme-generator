@@ -111,19 +111,3 @@ option::checkmark {
 .color {
     flex: 1;
 }
-
-.color-one {
-    background-color: #F55A5A;
-}
-.color-two {
-    background-color: #2B283A;
-}
-.color-three {
-    background-color: #FBF3AB;
-}
-.color-four {
-    background-color: #AAD1B6;
-}
-.color-five {
-    background-color: #A626D3;
-}
